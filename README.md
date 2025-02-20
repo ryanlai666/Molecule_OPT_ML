@@ -101,6 +101,14 @@ Challenges include ensuring the SMILES string contains only atoms present in the
 
 This comprehensive approach ensures a robust pipeline for training a graph neural force field and optimizing molecular geometries, leveraging high-quality data and established machine learning techniques.
 
+
+- Usage Notes
+Dataset Path: Replace "path/to/SPICE-1.1.4.hdf5" with the actual path to the downloaded SPICE dataset file from Zenodo.
+HDF5 Structure: The code assumes a specific HDF5 structure. If the keys differ (e.g., atomic_numbers instead of atom_types), update the SpiceDataset class accordingly.
+Demo Mode: The dataset is limited to 100 conformations and training to 10 epochs for quick testing. Remove the limit and increase epochs for full training.
+Prediction: Input any valid SMILES string into predict_optimized_structure to get the optimized 3D structure (e.g., "CCO" for ethanol, "c1ccccc1" for benzene).
+
+
 ### Key Citations
 - SPICE, A Dataset of Drug-like Molecules and Peptides for Training Machine Learning Potentials [Scientific Data](https://www.nature.com/articles/s41597-022-01882-6)
 - GitHub repository for SPICE dataset scripts and details [openmm/spice-dataset](https://github.com/openmm/spice-dataset)

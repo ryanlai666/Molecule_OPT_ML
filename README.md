@@ -103,10 +103,10 @@ This comprehensive approach ensures a robust pipeline for training a graph neura
 
 
 ## Usage Notes
-Dataset Path: Replace "path/to/SPICE-1.1.4.hdf5" with the actual path to the downloaded SPICE dataset file from Zenodo.
-HDF5 Structure: The code assumes a specific HDF5 structure. If the keys differ (e.g., atomic_numbers instead of atom_types), update the SpiceDataset class accordingly.
-Demo Mode: The dataset is limited to 100 conformations and training to 10 epochs for quick testing. Remove the limit and increase epochs for full training.
-Prediction: Input any valid SMILES string into predict_optimized_structure to get the optimized 3D structure (e.g., "CCO" for ethanol, "c1ccccc1" for benzene).
+- Dataset Path: Replace "path/to/SPICE-1.1.4.hdf5" with the actual path to the downloaded SPICE dataset file from Zenodo.
+- HDF5 Structure: The code assumes a specific HDF5 structure. If the keys differ (e.g., atomic_numbers instead of atom_types), update the SpiceDataset class accordingly.
+- Demo Mode: The dataset is limited to 100 conformations and training to 10 epochs for quick testing. Remove the limit and increase epochs for full training.
+- Prediction: Input any valid SMILES string into predict_optimized_structure to get the optimized 3D structure (e.g., "CCO" for ethanol, "c1ccccc1" for benzene).
 
 
 ### Key Citations

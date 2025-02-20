@@ -73,9 +73,9 @@ The SchNet model is initialized with parameters such as `num_features` (number o
 
 The training loop batches data using `DataLoader` with a batch size of 32, iterating over epochs (set to 100 for demonstration). For each batch, we compute the energy prediction, derive forces via gradient computation, and update the model parameters using Adam optimizer with a learning rate of 0.001. The loss function is:
 
-\[
+$$
 \text{Loss} = \text{MSE}(\text{Energy}_{\text{pred}}, \text{Energy}_{\text{true}}) + \text{MSE}(\text{Forces}_{\text{pred}}, \text{Forces}_{\text{true}})
-\]
+$$
 
 Given the computational cost of force computation, we handle batched data by iterating over individual molecules within a batch, computing gradients per molecule, which may be inefficient but ensures accuracy for demonstration purposes.
 

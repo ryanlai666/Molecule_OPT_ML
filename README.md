@@ -102,7 +102,7 @@ Challenges include ensuring the SMILES string contains only atoms present in the
 This comprehensive approach ensures a robust pipeline for training a graph neural force field and optimizing molecular geometries, leveraging high-quality data and established machine learning techniques.
 
 
-- Usage Notes
+## Usage Notes
 Dataset Path: Replace "path/to/SPICE-1.1.4.hdf5" with the actual path to the downloaded SPICE dataset file from Zenodo.
 HDF5 Structure: The code assumes a specific HDF5 structure. If the keys differ (e.g., atomic_numbers instead of atom_types), update the SpiceDataset class accordingly.
 Demo Mode: The dataset is limited to 100 conformations and training to 10 epochs for quick testing. Remove the limit and increase epochs for full training.
